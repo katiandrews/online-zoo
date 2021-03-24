@@ -33,6 +33,24 @@ body {
   color: #080029;
 }
 
+.slider-button-left {
+  display: block;
+  width: 65px;
+  height: 65px;
+  background: url("../../assets/icons/left-arrow.svg") #181818 no-repeat center;
+  border-radius: 50%;
+  border: none;
+}
+
+.slider-button-right {
+  display: block;
+  width: 65px;
+  height: 65px;
+  background: url("../../assets/icons/arrow-right.svg") #181818 no-repeat center;
+  border-radius: 50%;
+  border: none;
+}
+
 .main-header {
   box-sizing: border-box;
   width: 1800px;
@@ -230,12 +248,18 @@ body {
 
 .famous-pets {
   background: #D9E8FF;
+  padding: 100px 0;
+}
+
+.famous-pets-wrapper {
+  display: flex;
 }
 
 .famous-pets-text {
   display: flex;
   flex-direction: column;
-  width: 350px;
+  justify-content: center;
+  min-width: 325px;
   margin-right: 40px;
 }
 
@@ -254,4 +278,102 @@ body {
   font-size: 36px;
   line-height: 145%;
   color: #080029;
+}
+
+.famous-pets-buttons {
+  display: flex;
+}
+
+.famous-pets-slider {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.famous-pets-slider-item {
+  position: relative;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  width: 328px;
+  height: 328px;
+  background: url("../../assets/images/little-panda.jpg");
+  border-radius: 5px;
+}
+
+.famous-pets-slider-item:nth-child(2) {
+  background: url("../../assets/images/penguin.jpg");
+}
+
+.famous-pets-slider-item:nth-child(3) {
+  background: url("../../assets/images/squirrel.jpg");
+  margin-right: 0;
+}
+
+.famous-pets-slider-item:nth-child(4) {
+  background: url("../../assets/images/slider-panda.jpg");
+  margin-bottom: 0;
+}
+
+.famous-pets-slider-item:nth-child(5) {
+  background: url("../../assets/images/slider-eagle.jpg");
+  margin-bottom: 0;
+}
+
+.famous-pets-slider-item:nth-child(6) {
+  background: url("../../assets/images/slider-gorilla.jpg");
+  margin: 0;
+}
+
+.famous-pets-card-title {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FCFCFC;
+  opacity: 0.8;
+}
+
+.famous-pets-card-description {
+  display: none;
+  position: absolute;
+  top: 125px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 189px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 154%;
+  color: #FCFCFC;
+}
+
+.famous-pets-button.slider-button-left {
+  margin-right: 20px;
+}
+
+.plus-button {
+  display: block;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  width: 76px;
+  height: 76px;
+  background: url("../../assets/icons/plus.svg") no-repeat center;
+  border: 2px solid #fcfcfc;
+  border-radius: 50%;
+}
+
+.feed {
+  width: 1800px;
+  margin: 100px auto;
+}
+
+.feed-title {
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  color: #0B0B0B;
 }
