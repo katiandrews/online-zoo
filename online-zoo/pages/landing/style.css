@@ -1,0 +1,257 @@
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 1800px;
+  padding: 0 184px;
+  margin: 0 auto;
+}
+
+.button_primary {
+  background: #080029;
+  border-radius: 5px;
+  padding: 20px 75px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FCFCFC;
+}
+
+.button_secondary {
+  border: 2px solid #080029;
+  border-radius: 5px;
+  padding: 20px 75px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #080029;
+}
+
+.main-header {
+  box-sizing: border-box;
+  width: 1800px;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px solid #f0f0f0;
+}
+
+.main-header__logo {
+  display: inline-block;
+  padding: 23px 17px;
+}
+
+.nav-list {
+  width: 800px;
+  margin-left: 94px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list__item a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 154%;
+  color: #080029;
+}
+
+.main-header__profile-icon {
+  padding: 17px 90px 17px 0;
+  margin-left: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 25px;
+  box-sizing: border-box;
+  border: 2px solid #f0f0f0;
+  width: 90px;
+  height: 760px;
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar__logo {
+  padding: 23px 0;
+}
+
+.sidebar__social-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 172px;
+  list-style: none;
+  margin-top: auto;
+  margin-bottom: 100px;
+}
+
+.social-list__item a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../../assets/icons/instagram.png");
+}
+
+.social-list__item:nth-child(2) a {
+  background: url("../../assets/icons/fb.png");
+}
+
+.social-list__item:last-child a {
+  background: url("../../assets/icons/twitter.png");
+}
+
+.up-button {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 100px;
+  background: url("../../assets/icons/upArrow.png") no-repeat center;
+  border: 2px solid #f0f0f0;
+  border-radius: 50%;
+}
+
+.promo {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 184px;
+  width: 1800px;
+  margin: 0 auto;
+}
+
+.promo-text {
+  width: 696px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.promo-title {
+  margin-bottom: 25px;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  color: #626262;
+}
+
+.promo-description {
+  position: relative;
+  font-family: 'Merriweather', serif;
+  margin-bottom: 60px;
+  font-size: 84px;
+  line-height: 106px;
+  color: #080029;
+}
+
+.promo-description::after {
+  content: "";
+  background-image: url("../../assets/icons/dot.svg");
+  position: absolute;
+  width: 14.31px;
+  height: 14.5px;
+  bottom: 77.9px;
+  left: 145.1px;
+}
+
+.promo-buttons {
+  display: flex;
+}
+
+.promo-button.button_primary {
+  margin-right: 62px;
+}
+
+.promo-img {
+  border-radius: 5px;
+  margin-top: 55px;
+  margin-bottom: 27px;
+}
+
+.how-works {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 184px;
+  width: 1800px;
+  margin: 110px auto;
+}
+
+.how-works-img {
+  margin-right: 224px;
+}
+
+.how-works-right-content {
+  width: 696px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.how-works-title {
+  margin-bottom: 50px;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  color: #0B0B0B;
+
+}
+
+.how-works-description {
+  margin-bottom: 40px;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 145%;
+  color: #080029;
+}
+
+.how-works-text {
+  margin-bottom: 60px;
+  font-size: 18px;
+  line-height: 154%;
+  color: #747474;
+}
+
+.how-works-button {
+  width: 68px;
+}
+
+.famous-pets {
+  background: #D9E8FF;
+}
+
+.famous-pets-text {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin-right: 40px;
+}
+
+.famous-pets-title {
+  margin-bottom: 50px;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  color: #0B0B0B;
+}
+
+.famous-pets-description {
+  margin-bottom: 55px;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 145%;
+  color: #080029;
+}
