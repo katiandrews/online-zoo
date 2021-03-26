@@ -44,6 +44,20 @@ h1 {
   margin: 0.67em 0;
 }
 
+h2 {
+  font-weight: normal;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+  font-weight: normal;
+}
+
 p {
   margin: 0;
 }
@@ -87,6 +101,10 @@ pre {
 a {
   background-color: transparent;
   text-decoration: none;
+}
+
+button:focus {
+  outline: none;
 }
 
 /**
