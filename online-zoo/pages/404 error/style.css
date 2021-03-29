@@ -110,7 +110,7 @@ body {
   box-sizing: border-box;
   width: 1800px;
   margin: 0 auto;
-  padding: 100px 0 140px 184px;
+  padding: 100px 0 150px 184px;
   display: grid;
   column-gap: 40px;
   grid-template-columns: 512px 512px 353px;
@@ -160,6 +160,10 @@ body {
   margin-bottom: 0;
 }
 
+.footer-navigation-item a:hover {
+  color: #fcfcfc;
+}
+
 .footer-donate {
   grid-area: donate;
 }
@@ -204,6 +208,10 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #BCBCBC;
+}
+
+.footer-social-item a:hover {
+  color: #fcfcfc;
 }
 
 .footer-divider {
