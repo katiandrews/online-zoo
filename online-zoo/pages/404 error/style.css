@@ -1,0 +1,287 @@
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 1800px;
+  padding: 0 184px;
+  margin: 0 auto;
+}
+
+.button_primary {
+  background: #0f0049;
+  border-radius: 5px;
+  padding: 20px 75px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FCFCFC;
+}
+
+.button_primary:hover {
+  background: #080029;
+}
+
+.button_primary:active {
+  background: #150068;
+}
+
+.button_secondary-invert {
+  border: 2px solid #fcfcfc;
+  border-radius: 5px;
+  padding: 20px 75px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fcfcfc;
+}
+
+.button_secondary-invert:hover {
+  border: 2px solid rgba(252, 252, 252, .6);
+}
+
+.button_secondary-invert:active {
+  border: 2px solid #3888FF;
+}
+
+.main-header {
+  box-sizing: border-box;
+  max-width: 1800px;
+  margin: 0 60px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-header__logo {
+  display: inline-block;
+  padding: 25px 17px;
+  cursor: pointer;
+}
+
+.main-header__nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  width: 800px;
+  margin-left: 98px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list__item a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 154%;
+  color: #080029;
+}
+
+.nav-list__item:not(.active):hover a {
+  color: #d00000;
+}
+
+.nav-list__item.active a {
+  cursor: default;
+  font-weight: 500;
+}
+
+.main-header__profile-icon {
+  margin: 10px 0;
+}
+
+.main-footer {
+  background: #0B0B0B;
+  padding-bottom: 59px;
+}
+
+.main-footer-wrapper {
+  box-sizing: border-box;
+  width: 1800px;
+  margin: 0 auto;
+  padding: 100px 0 140px 184px;
+  display: grid;
+  column-gap: 40px;
+  grid-template-columns: 512px 512px 353px;
+  grid-template-rows: 257px 127px;
+  grid-template-areas:
+    "logo nav donate"
+    "logos nav social";
+}
+
+.footer-logo {
+  grid-area: logo;
+}
+
+.promo-logos {
+  height: 62px;
+  grid-area: logos;
+  margin-top: 52px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FCFCFC;
+}
+
+.footer-navigation {
+  grid-area: nav;
+}
+
+.footer-navigation-title {
+  margin-bottom: 40px;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  color: #FCFCFC;
+}
+
+.footer-navigation-item a {
+  display: inline-block;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #BCBCBC;
+}
+
+.footer-navigation-item:last-child a {
+  margin-bottom: 0;
+}
+
+.footer-donate {
+  grid-area: donate;
+}
+
+.donate-title {
+  margin-bottom: 46px;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  color: #FCFCFC;
+}
+
+.donate-text {
+  max-width: 332px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #BCBCBC;
+}
+
+.donate-button {
+  display: inline-block;
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FCFCFC;
+  border: 2px solid #FCFCFC;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.footer-social {
+  height: 24px;
+  margin-top: 85px;
+  grid-area: social;
+  display: flex;
+  gap: 45px;
+}
+
+.footer-social-item a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #BCBCBC;
+}
+
+.footer-divider {
+  height: 2px;
+  background-color: #747474;
+  border: none;
+}
+
+.footer-copyrights {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 145%;
+  text-align: right;
+  color: #BCBCBC;
+}
+
+.error {
+  max-width: 1800px;
+  margin: 132px auto 80px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-title {
+  position: relative;
+  margin-bottom: 30px;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 145%;
+  text-align: center;
+  color: #080029;
+}
+
+.error-title::before {
+  content: url("../../assets/icons/404.svg");
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -13px;
+  margin: auto;
+  z-index: -1;
+}
+
+.error-text {
+  width: 900px;
+  font-size: 24px;
+  line-height: 154%;
+  text-align: center;
+  color: #080029;
+}
+
+.error-button {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.video {
+  margin-bottom: 60px;
+}
+
+.support-message {
+  width: 425px;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #747474;
+}
+
+.support-message .link-item {
+  cursor: pointer;
+  text-decoration-line: underline;
+  color: #3888ff;
+}
+
+.support-message .link-item:hover {
+  color: #1c54a8;
+}

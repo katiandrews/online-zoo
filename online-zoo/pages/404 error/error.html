@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Error 404</title>
+</head>
+<body>
+  <header class="main-header">
+    <a href="../landing/index.html" class="main-header__logo"><img src="../../assets/icons/logo.svg" alt="logo"></a>
+    <nav class="main-header__nav">
+      <ul class="nav-list">
+        <li class="nav-list__item"><a href="../landing/index.html">About</a></li>
+        <li class="nav-list__item"><a href="../zooz map/map.html">Map</a></li>
+        <li class="nav-list__item"><a href="../zoos translation/panda.html">Zoos</a></li>
+        <li class="nav-list__item active"><a href="../404 error/error.html">Contact us</a></li>
+        <li class="nav-list__item"><a href="https://www.figma.com/file/74wXlorl9mZQP0uhqDg83j/Online-Zoo">Design</a></li>
+      </ul>
+      <img src="../../assets/icons/profile.svg" alt="profile" class="main-header__profile-icon">
+    </nav>
+  </header>
+  <main>
+    <section class="error">
+      <h1 class="visually-hidden">Online Zoo</h1>
+      <h2 class="error-title">Oops... you seem to be lost</h2>
+      <p class="error-text">Just don't be discouraged, but there is no such page :(<br> 
+        We can offer you to watch a video with cute pandas or return to the main page</p>
+      <a href="../landing/index.html" class="error-button button_primary">Back to main page</a>
+      <iframe class="video" 
+              width="900" 
+              height="507"
+              src="https://www.youtube.com/embed/wPTN0Wfgjg0?controls=0" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+      <p class="support-message">You can write to support and we will try to solve your problem, 
+        <a class="link-item">click here to go to support.</a></p>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer-wrapper">
+      <a href="#"><img src="../../assets/icons/footer-logo.svg" alt="logo" class="footer-logo"></a>
+      <div class="promo-logos">
+        <img class="yem-logo" src="../../assets/icons/yem_digital.svg" alt="yem digital" title="Yem Digital">
+        x
+        <img class="rs-logo" src="../../assets/icons/rs_school_js.svg" alt="RS school" title="Rolling Scopes School">
+      </div>
+      <ul class="footer-navigation">
+        <li class="footer-navigation-title">Navigation</li>
+        <li class="footer-navigation-item"><a href="../landing/index.html">Main page</a></li>
+        <li class="footer-navigation-item"><a href="../landing/index.html">About us</a></li>
+        <li class="footer-navigation-item"><a href="../zoos translation/panda.html">Pets i zoo</a></li>
+        <li class="footer-navigation-item"><a href="../landing/index.html">Instruction</a></li>
+        <li class="footer-navigation-item"><a href="../landing/index.html">Testimonials</a></li>
+        <li class="footer-navigation-item"><a href="../zooz map/map.html">Animal map</a></li>
+      </ul>
+      <div class="footer-donate">
+        <h4 class="donate-title">Support of volunteers</h4>
+        <p class="donate-text">You can thank the volunteers for their work.
+          For example, caring for animals and sincere love for them.</p>
+        <a href="" class="donate-button button_secondary-invert">Donate for volunteers </a>
+      </div>
+      <ul class="footer-social">
+        <li class="footer-social-item"><a href="https://www.instagram.com/">Instagram</a></li>
+        <li class="footer-social-item"><a href="https://www.facebook.com/">Facebook</a></li>
+        <li class="footer-social-item"><a href="https://twitter.com/?lang=en">Twitter</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <hr class="footer-divider">
+        <div class="footer-copyrights">
+          <p class="footer-copyright">Copyright ©RSSchool and ©Yem Digital 2020 - 2021</p>
+          <p class="design-copyright">Designed by Vladislav Chernov</p>
+        </div>
+      </div>
+  </footer>
+   <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'M7lc1UVf-VE',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+</body>
+</html>
