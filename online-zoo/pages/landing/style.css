@@ -160,6 +160,7 @@ body {
   position: fixed;
   top: 25px;
   box-sizing: border-box;
+  background: rgba(252, 252, 252, 0.2);
   border: 2px solid #f0f0f0;
   width: 90px;
   height: 760px;
@@ -800,6 +801,7 @@ body {
 }
 
 .map-pin {
+  transition-duration: 250ms;
   width: 72px;
   height: 89px;
   filter: drop-shadow(1px 12px 12px rgba(0, 0, 0, 0.09));
@@ -816,12 +818,14 @@ body {
 }
 
 .map-pin:not(.active):hover {
+  transition-duration: 250ms;
   width: 98px;
   height: 128px;
   transform: translateX(-13px);
 }
 
 .map-pin:hover .outer {
+  transition-duration: 250ms;
   stroke: rgba(96, 159, 255, 1);
   stroke-width: 2px;
 }
