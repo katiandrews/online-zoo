@@ -139,6 +139,7 @@ body {
   position: fixed;
   top: 25px;
   box-sizing: border-box;
+  background: rgba(252, 252, 252, 0.2);
   border: 2px solid #f0f0f0;
   width: 90px;
   height: 760px;
