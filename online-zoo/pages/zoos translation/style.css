@@ -476,6 +476,7 @@ body {
 }
 
 .accordeon-item .divider {
+  background-color: #609fff;
   margin-top: 25px;
   margin-bottom: 32px;
 }
