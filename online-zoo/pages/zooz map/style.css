@@ -191,6 +191,10 @@ body {
   background: url("../../assets/icons/arrow-up.svg") no-repeat center;
 }
 
+.arrow-up:hover {
+  transform: scale(1.5);
+}
+
 .arrow-down {
   cursor: pointer;
   display: block;
@@ -200,6 +204,9 @@ body {
   transform: rotate(180deg);
 }
 
+.arrow-down:hover {
+  transform: scale(1.5);
+}
 
 .sidebar__buttons {
   margin-top: 27px;
