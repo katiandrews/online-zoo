@@ -4,7 +4,8 @@ body {
 }
 
 .visually-hidden {
-  display: none;
+  visibility: hidden;
+  position: absolute;
 }
 
 .container {
@@ -125,14 +126,15 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav-list {
   width: 800px;
-  margin-left: 97px;
+  margin-left: 184px;
   display: flex;
   justify-content: space-between;
-  margin-top: 33px;
+  align-items: center;
 }
 
 .nav-list__item a {
@@ -156,8 +158,20 @@ body {
   margin: 17px 90px 17px 0;
 }
 
+main {
+  position: relative;
+}
+
+.sidebar-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
 .sidebar {
-  position: fixed;
+  position: sticky;
+  margin-top: -90px;
   top: 25px;
   box-sizing: border-box;
   background: rgba(252, 252, 252, 0.2);
@@ -729,7 +743,8 @@ body {
 .map {
   box-sizing: border-box;
   width: 1800px;
-  margin: 50px auto 112px;
+  margin: 50px auto 0;
+  padding-bottom: 112px;
   padding-left: 184px;
   display: grid;
   column-gap: 24px;

@@ -4,7 +4,8 @@ body {
 }
 
 .visually-hidden {
-  display: none;
+  visibility: hidden;
+  position: absolute;
 }
 
 .container {
@@ -108,7 +109,7 @@ body {
 
 .nav-list {
   width: 800px;
-  margin-left: 97px;
+  margin-left: 184px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -135,8 +136,20 @@ body {
   margin: 17px 85px 17px 0;
 }
 
+main {
+  position: relative;
+}
+
+.sidebar-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
 .sidebar {
-  position: fixed;
+  position: sticky;
+  margin-top: -90px;
   top: 25px;
   box-sizing: border-box;
   background: rgba(252, 252, 252, 0.2);
@@ -231,9 +244,10 @@ body {
 
 .translation {
   box-sizing: border-box;
+  padding-top: 71px;
   padding-left: 184px;
   max-width: 1800px;
-  margin: 71px auto 60px auto;
+  margin: 0 auto 60px auto;
   display: flex;
 }
 
@@ -485,8 +499,9 @@ body {
 .feed {
   box-sizing: border-box;
   width: 1800px;
-  margin: 205px auto 181px auto;
+  margin: 205px auto 0 auto;
   padding-left: 184px;
+  padding-bottom: 181px;
 }
 
 .feed-title {
