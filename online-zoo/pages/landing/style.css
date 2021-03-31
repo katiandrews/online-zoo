@@ -355,7 +355,7 @@ main {
   display: flex;
   flex-direction: column;
   margin-top: 218px;
-  min-width: 328px;
+  max-width: 328px;
   margin-right: 40px;
 }
 
@@ -384,35 +384,24 @@ main {
   margin-right: 20px;
 }
 
+.famous-pets-slider-wrapper {
+  overflow: hidden;
+}
+
 .famous-pets-slider {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 40px;
+  grid-template-rows: repeat(2, 328px);
+  grid-template-columns: repeat(auto-fill, 328px);
+  grid-auto-flow: column;
 }
 
 .famous-pets-slider-item {
   position: relative;
-  margin-right: 40px;
-  margin-bottom: 40px;
   width: 328px;
   height: 328px;
   /*background: url("../../assets/images/little-panda.jpg");*/
   border-radius: 5px;
-}
-
-.famous-pets-slider-item:nth-child(3) {
-  margin-right: 0;
-}
-
-.famous-pets-slider-item:nth-child(4) {
-  margin-bottom: 0;
-}
-
-.famous-pets-slider-item:nth-child(5) {
-  margin-bottom: 0;
-}
-
-.famous-pets-slider-item:nth-child(6) {
-  margin: 0;
 }
 
 .famous-pets-slider-item::before {
@@ -425,23 +414,31 @@ main {
 }
 
 .famous-pets-slider-item:nth-child(2)::before {
-  background-image: url("../../assets/images/penguin.jpg");
-}
-
-.famous-pets-slider-item:nth-child(3)::before {
-  background-image: url("../../assets/images/squirrel.jpg");
-}
-
-.famous-pets-slider-item:nth-child(4)::before {
   background-image: url("../../assets/images/slider-panda.jpg");
 }
 
-.famous-pets-slider-item:nth-child(5)::before {
+.famous-pets-slider-item:nth-child(3)::before {
+  background-image: url("../../assets/images/penguin.jpg");
+}
+
+.famous-pets-slider-item:nth-child(4)::before {
   background-image: url("../../assets/images/slider-eagle.jpg");
+}
+
+.famous-pets-slider-item:nth-child(5)::before {
+  background-image: url("../../assets/images/squirrel.jpg");
 }
 
 .famous-pets-slider-item:nth-child(6)::before {
   background-image: url("../../assets/images/slider-gorilla.jpg");
+}
+
+.famous-pets-slider-item:nth-child(7)::before {
+  background-image: url("../../assets/images/slider-tiger.jpg");
+}
+
+.famous-pets-slider-item:nth-child(8)::before {
+  background-image: url("../../assets/images/slider-croco.jpg");
 }
 
 .famous-pets-slider-item:hover::before {
