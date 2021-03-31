@@ -1,12 +1,13 @@
 body {
   font-family: 'Rubik', sans-serif;
-  height: 860px;
+  height: 100vh;
 }
 
 .background-img {
   position: relative;
   background: url("../../assets/images/map.jpg") no-repeat #fcfcfc;
-  height: 860px;
+  background-position: bottom -630px left -99px;
+  height: 100vh;
 }
 
 .visually-hidden {
@@ -116,12 +117,14 @@ body {
   flex-direction: row;
   background: #fcfcfc;
   border: 2px solid #f0f0f0;
+  z-index: 2;
 }
 
 .main-header__logo {
   display: inline-block;
-  padding: 23px 16px 19px 16px;
+  padding: 23px 17px 19px 16px;
   cursor: pointer;
+  border-right: 2px solid #f0f0f0;
 }
 
 .main-header__nav {
@@ -132,7 +135,7 @@ body {
 
 .nav-list {
   width: 800px;
-  margin-left: 184px;
+  margin-left: 97px;
   display: flex;
   justify-content: space-between;
   align-items: center;
