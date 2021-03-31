@@ -823,8 +823,8 @@ main {
 }
 
 .map-pin.active {
-  width: 98px;
-  height: 128px;
+  width: 96px;
+  height: 124px;
 }
 
 .map-pin.active .outer {
@@ -834,8 +834,8 @@ main {
 
 .map-pin:not(.active):hover {
   transition-duration: 250ms;
-  width: 98px;
-  height: 128px;
+  width: 96px;
+  height: 124px;
   transform: translateX(-13px);
 }
 

@@ -1,6 +1,12 @@
 body {
   font-family: 'Rubik', sans-serif;
-  background: #fcfcfc;
+  height: 860px;
+}
+
+.background-img {
+  position: relative;
+  background: url("../../assets/images/map.jpg") no-repeat #fcfcfc;
+  height: 860px;
 }
 
 .visually-hidden {
@@ -57,6 +63,21 @@ body {
   border: 2px solid #3888FF;
 }
 
+.button-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #fcfcfc;
+}
+
+.button-link:hover {
+  gap: 20px;
+}
+
 .slider-button-left {
   display: block;
   width: 65px;
@@ -86,12 +107,14 @@ body {
 }
 
 .main-header {
+  position: relative;
+  top: 25px;
   box-sizing: border-box;
   max-width: 1800px;
   margin: 0 60px;
-  margin-top: 25px;
   display: flex;
   flex-direction: row;
+  background: #fcfcfc;
   border: 2px solid #f0f0f0;
 }
 
@@ -109,7 +132,7 @@ body {
 
 .nav-list {
   width: 800px;
-  margin-left: 97px;
+  margin-left: 184px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -140,7 +163,7 @@ body {
   position: fixed;
   top: 25px;
   box-sizing: border-box;
-  background: rgba(252, 252, 252, 0.2);
+  background: #fcfcfc;
   border: 2px solid #f0f0f0;
   width: 90px;
   height: 760px;
@@ -148,6 +171,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 }
 
 .sidebar__logo {
@@ -180,8 +204,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 40px;
+  gap: 72px;
   list-style: none;
 }
 
@@ -213,4 +236,99 @@ body {
 
 .sidebar__button:last-child a {
   background: url("../../assets/icons/gorilla-icon.svg") no-repeat center;
+}
+
+.map-card {
+  position: absolute;
+  bottom: 108px;
+  left: 583px;
+  width: 344px;
+  height: 512px;
+  background: url("../../assets/images/gorilla-card.jpg") top no-repeat;
+  background-size: 100% 42.6%;
+  box-shadow: 4px 12px 22px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+}
+
+.map-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 218px;
+  background-color: #fcfcfc;
+  padding: 20px 40px 45px;
+  border-radius: 0 0 15px 15px;
+}
+
+.map-card-title {
+  font-family: 'Merriweather', serif;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 145%;
+  color: #080029;
+}
+
+.map-card-description {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #747474;
+}
+
+.map-card .button-link {
+  margin-left: 6px;
+  margin-top: 24px;
+  color: #3888FF;
+}
+
+.map-pin {
+  position: absolute;
+  transition-duration: 250ms;
+  width: 82px;
+  height: 106px;
+  filter: drop-shadow(1px 12px 12px rgba(0, 0, 0, 0.09));
+}
+
+.map-pin:not(.active):hover {
+  transition-duration: 250ms;
+  width: 96px;
+  height: 124px;
+  transform: translateX(-7px);
+}
+
+.map-pin:hover .outer {
+  transition-duration: 250ms;
+  stroke: rgba(96, 159, 255, 1);
+  stroke-width: 2px;
+}
+
+.map-pin:first-of-type {
+  top: -53px;
+  left: -97px;
+}
+
+.map-pin:nth-of-type(2) {
+  bottom: 549px;
+  left: 251px;
+}
+
+.map-pin:nth-of-type(3) {
+  bottom: 302px;
+  left: 942px;
+}
+
+.map-pin:last-of-type {
+  bottom: 507px;
+  left: 1628px;
+}
+
+.map-pin.active {
+  width: 96px;
+  height: 124px;
+}
+
+.map-pin.active .outer {
+  stroke: rgba(96, 159, 255, 1);
+  stroke-width: 2px;
 }
