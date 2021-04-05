@@ -109,7 +109,7 @@ body {
 
 .nav-list {
   width: 800px;
-  margin-left: 184px;
+  margin-left: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -190,7 +190,7 @@ main {
 }
 
 .arrow-down:hover {
-  transform: scale(1.5);
+  transform: rotate(180deg) scale(1.5);
 }
 
 .sidebar__buttons {
