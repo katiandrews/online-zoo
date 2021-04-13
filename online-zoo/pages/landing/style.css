@@ -902,7 +902,7 @@ main {
   left: 590px;
 }
 
-.map-pin:last-child {
+.map-pin:nth-child(4) {
   position: absolute;
   bottom: 407px;
   left: 909px;
@@ -1433,7 +1433,7 @@ main {
     padding-bottom: 0;
     display: grid;
     column-gap: 9px;
-    grid-template-columns: 292px 828px;
+    grid-template-columns: 292px 675px;
     grid-template-rows: 84px 448px;
     grid-template-areas:
       "title map"
@@ -1473,6 +1473,7 @@ main {
   .worldmap {
     margin-top: 84px;
     height: 388px;
+    width: auto;
     background-size: contain;
   }
 
@@ -1511,7 +1512,7 @@ main {
     left: 309px;
   }
 
-  .map-pin:last-child {
+  .map-pin:nth-child(4) {
     bottom: 228px;
     left: 492px;
   }
@@ -1979,7 +1980,7 @@ main {
     left: 273px;
   }
 
-  .map-pin:last-child {
+  .map-pin:nth-child(4) {
     bottom: 194px;
     left: 443px;
   }
@@ -2202,6 +2203,11 @@ main {
     margin-bottom: 30px;
     font-size: 16px;
     line-height: 19px;
+  }
+
+  .feed-step:nth-of-type(2),
+  .feed-step:last-of-type {
+    width: 100%;
   }
 
   .feed-step-title {
