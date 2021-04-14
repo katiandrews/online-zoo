@@ -2205,7 +2205,15 @@ main {
     line-height: 19px;
   }
 
-  .feed-step:nth-of-type(2),
+  .feed-step:first-of-type {
+    margin-bottom: 40px;
+  }
+
+  .feed-step:nth-of-type(2) {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
   .feed-step:last-of-type {
     width: 100%;
   }
