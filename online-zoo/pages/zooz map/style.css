@@ -162,6 +162,10 @@ body {
   margin: 17px 85px 17px 0;
 }
 
+.main-header__burger {
+  display: none;
+}
+
 .sidebar {
   position: fixed;
   top: 25px;
@@ -341,4 +345,331 @@ body {
 .map-pin.active .outer {
   stroke: rgba(96, 159, 255, 1);
   stroke-width: 2px;
+}
+
+@media (max-width: 1200px) {
+  .background-img {
+    background-size: 1400px 1410px;
+    background-position: bottom -383px left 0px;
+  }
+
+  .main-header {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .nav-list {
+    width: 680px;
+    margin-left: 77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-header__profile-icon {
+    width: 42px;
+    margin: 11px 70px 13px 0;
+  }
+
+  .main-header__logo {
+    width: 41px;
+    padding: 17px 12px 13px 12px;
+  }
+
+  .sidebar {
+    margin-top: 0px;
+    width: 70px;
+    height: auto;
+    margin-left: 40px;
+  }
+
+  .sidebar__logo {
+    width: 41px;
+    padding: 17px 0 13px 0;
+  }
+
+  .arrow-up {
+    width: 66px;
+    min-height: 66px;
+  }
+
+  .arrow-down {
+    width: 66px;
+    min-height: 66px;
+  }
+
+  .sidebar__buttons {
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-content: center;
+    gap: 78px;
+  }
+
+  .sidebar__button a {
+    width: 45px;
+    height: 45px;
+    background-size: 28px auto;
+  }
+
+  .sidebar__button:nth-child(2) a {
+    background-size: 23px auto;
+  }
+
+  .sidebar__button:nth-child(3) a {
+    background-size: 22px auto;
+  }
+
+  .sidebar__button:nth-child(4) a {
+    background-size: 25px auto;
+  }
+
+  .map-pin {
+    position: absolute;
+    transition-duration: 250ms;
+    width: 53px;
+    height: 68px;
+    filter: drop-shadow(1px 12px 12px rgba(0, 0, 0, 0.09));
+  }
+
+  .map-pin.active {
+    width: 64px;
+    height: 82px;
+  }
+
+  .map-pin:first-of-type {
+    top: 94px;
+    left: 1px;
+  }
+
+  .map-pin:nth-of-type(2) {
+    bottom: 375px;
+    left: 225px;
+  }
+
+  .map-pin:nth-of-type(3) {
+    bottom: 228px;
+    left: 669px;
+  }
+
+  .map-pin:last-of-type {
+    bottom: 349px;
+    left: 1111px;
+  }
+
+  .map-card {
+    bottom: 45px;
+    left: 362px;
+    width: 292px;
+    height: 448px;
+    background: url(../../assets/images/gorilla-card.jpg) top no-repeat;
+    background-size: 100% 42.6%;
+  }
+
+  .map-card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 193px;
+    background-color: #fcfcfc;
+    padding: 20px 14px 40px;
+    border-radius: 0 0 15px 15px;
+  }
+
+  .map-card-title {
+    margin-bottom: 15px;
+    font-size: 28px;
+  }
+
+  .map-card-description {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .map-card .button-link {
+    margin-top: 19px;
+  }
+}
+
+@media (max-width: 640px) {
+  .background-img {
+    background-position: top -328px left -341px;
+    overflow: hidden;
+  }
+
+  .main-header {
+    border: none;
+    background: none;
+    box-shadow: none;
+  }
+
+  .main-header__logo {
+    width: 49px;
+    padding: 23px 0 23px 20px;
+    border: none;
+  }
+
+  .nav-list {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 105px 0 105px 0;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .main-header__profile-icon {
+    display: none;
+  }
+
+  .main-header__burger {
+    align-self: flex-start;
+    margin-left: auto;
+    display: block;
+    padding: 23px 20px 0 0;
+  }
+
+  .sidebar {
+    position: absolute;
+    top: auto;
+    bottom: 25px;
+    background: #fcfcfc;
+    border: none;
+    width: 600px;
+    height: 80px;
+    margin-left: 20px;
+    flex-direction: row;
+    border-radius: 15px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    z-index: 1;
+  }
+
+  .sidebar__buttons {
+    flex-direction: row;
+    gap: 94px;
+  }
+
+  .sidebar__logo {
+    display: none;
+  }
+
+  .arrow-up {
+    transform: rotate(-90deg);
+  }
+
+  .arrow-down {
+    transform: rotate(90deg);
+  }
+
+  .map-pin:first-of-type {
+    top: -94px;
+    left: 1px;
+  }
+
+  .map-pin:nth-of-type(2) {
+    top: 290px;
+    left: -331px;
+  }
+
+  .map-pin:nth-of-type(3) {
+    top: 390px;
+    left: 331px;
+  }
+
+  .map-card {
+    top: 236px;
+    left: 66px;
+    width: 250px;
+    height: 390px;
+  }
+
+  .map-card-info {
+    margin-top: 160px;
+    padding: 20px 19px 30px;
+  }
+
+  .map-card-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .map-card-description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .map-card .button-link {
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 320px) {
+  .background-img {
+    background-size: 836px 842px;
+    background-position: top -204px left -204px;
+  }
+  .main-header {
+    height: 59px;
+  }
+
+  .main-header__logo {
+    width: 38px;
+    padding: 15px 0 15px 10px;
+  }
+
+  .nav-list {
+    display: none;
+    padding: 108px 0 108px 0;
+    gap: 47px;
+  }
+
+  .main-header__profile-icon {
+    display: none;
+  }
+
+  .main-header__burger {
+    width: 35px;
+    padding-top: 19px;
+    padding-right: 10px;
+  }
+
+  .sidebar {
+    position: absolute;
+    top: auto;
+    bottom: 17px;
+    width: 300px;
+    height: 75px;
+    margin-left: 10px;
+    justify-content: space-between;
+  }
+
+  .sidebar__buttons {
+    gap: 18px;
+  }
+
+  .arrow-down,
+  .arrow-up {
+    min-height: 10px;
+    width: 20px;
+    margin: 10px;
+  }
+
+  .map-card {
+    display: none;
+  }
+
+  .map-pin {
+    width: 36px;
+    height: 45px;
+  }
+
+  .map-pin.active {
+    width: 43px;
+    height: 55px;
+  }
+
+  .map-pin:nth-of-type(3) {
+    top: 222px;
+    left: 193px;
+  }
 }

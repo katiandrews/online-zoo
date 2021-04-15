@@ -1594,6 +1594,11 @@ main {
     margin-top: 46px;
   }
 
+  .item-content {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
   .item-content .link-item {
     word-wrap: break-word;
   }
@@ -1735,6 +1740,7 @@ main {
 
   .container {
     width: 300px;
+
   }
 
 }

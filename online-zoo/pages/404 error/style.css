@@ -101,6 +101,10 @@ body {
   margin: 10px 0;
 }
 
+.main-header__burger {
+  display: none;
+}
+
 .main-footer {
   background: #0B0B0B;
   padding-bottom: 59px;
@@ -275,6 +279,8 @@ body {
 
 .video {
   margin-bottom: 60px;
+  width: 900px;
+  height: 507px;
 }
 
 .support-message {
@@ -293,4 +299,448 @@ body {
 
 .support-message .link-item:hover {
   color: #1c54a8;
+}
+
+@media (max-width: 1200px) {
+  .main-header {
+    max-width: 1120px;
+    margin: 0 auto;
+    margin-top: 22px;
+  }
+
+  .main-header__logo {
+    width: 41px;
+    padding: 17px 12px 16px 12px;
+  }
+
+  .main-header__nav {
+    height: 70px;
+  }
+
+  .nav-list {
+    width: 680px;
+    margin-left: 88px;
+  }
+
+  .main-header__profile-icon {
+    width: 42px;
+    margin: 11px 11px 10px 0;
+  }
+
+  .error {
+    max-width: 1120px;
+    margin: 159px auto 80px auto;
+  }
+
+  .error-title {
+    position: relative;
+    font-size: 28px;
+    line-height: 145%;
+  }
+
+  .error-text {
+    width: 651px;
+    font-size: 18px;
+    line-height: 154%;
+  }
+
+  .button_primary {
+    padding: 16px 60px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .error-button {
+    margin-top: 40px;
+  }
+
+  .error-title::before {
+    content: url(../../assets/icons/404.svg);
+    transform: scale(0.85);
+    bottom: -20px;
+  }
+  .video {
+    width: 832px;
+    height: 469px;
+  }
+
+  .support-message {
+    width: 425px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .main-footer {
+    padding-bottom: 40px;
+  }
+
+  .main-footer-wrapper {
+    width: 1120px;
+    margin: 0 auto;
+    padding: 100px 0 133px 0;
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: 257px 401px 401px;
+    grid-template-rows: 91px 166px 127px;
+    grid-template-areas:
+      "logo nav donate"
+      "logos nav donate"
+      "logos nav social";
+  }
+
+  .footer-logo {
+    width: 119px;
+    height: 91px;
+  }
+
+  .promo-logos {
+    margin-top: 103px;
+    flex-direction: column;
+    height: 176px;
+    align-items: center;
+    justify-self: flex-start;
+  }
+
+  .promo-logos img {
+    align-self: flex-start;
+  }
+
+  .donate-text {
+    width: 332px;
+  }
+
+  .footer-social {
+    margin-top: 93px;
+  }
+
+  .footer-social-item a {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .footer-copyrights {
+    margin-top: 40px;
+  }
+
+  .container {
+    width: 1120px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin-top: 0;
+    border: none;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.04);
+  }
+
+  .main-header__logo {
+    width: 49px;
+    padding: 23px 0 23px 20px;
+  }
+
+  .nav-list {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 105px 0 105px 0;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .main-header__profile-icon {
+    display: none;
+  }
+
+  .main-header__burger {
+    align-self: flex-start;
+    margin-left: auto;
+    display: block;
+    padding: 23px 20px 0 0;
+  }
+
+  .error {
+    max-width: 600px;
+    margin: 158px auto 60px auto;
+  }
+
+  .error-title {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+
+  .error-title::before {
+    transform: scale(0.65);
+    bottom: -25px;
+  }
+
+  .error-text {
+    width: 579px;
+    font-size: 16px;
+  }
+
+  .error-button {
+    margin-top: 35px;
+    margin-bottom: 70px;
+  }
+
+  .video {
+    width: 600px;
+    height: 338px;
+    margin-bottom: 40px;
+  }
+
+  .support-message {
+    width: 425px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .main-footer {
+    padding-bottom: 20px;
+  }
+
+  .main-footer-wrapper {
+    width: 600px;
+    margin: 0 auto;
+    padding: 80px 0 60px 0;
+    display: grid;
+    column-gap: 30px;
+    row-gap: 60px;
+    grid-template-columns: 180px 390px;
+    grid-template-rows: 74px 230px 79px;
+    grid-template-areas:
+      "logo logos"
+      "nav  donate"
+      "nav  social";
+  }
+
+  .footer-logo {
+    width: 95px;
+    height: 74px;
+  }
+
+  .promo-logos {
+    margin-top: 0;
+    flex-direction: row;
+    height: max-content;
+    align-self: flex-end;
+  }
+
+  .yem-logo {
+    width: 93px;
+  }
+
+  .rs-logo {
+    width: 102px;
+  }
+
+  .footer-navigation-item a {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .donate-title {
+    margin-bottom: 30px;
+  }
+
+  .donate-text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .donate-button {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .footer-social {
+    margin-top: -10px;
+  }
+
+  .footer-social-item a {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .footer-copyrights {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .container {
+    max-width: 600px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-header {
+    height: 59px;
+  }
+
+  .main-header__logo {
+    width: 38px;
+    padding: 15px 0 15px 10px;
+  }
+
+  .nav-list {
+    display: none;
+    padding: 108px 0 108px 0;
+    gap: 47px;
+  }
+
+  .main-header__profile-icon {
+    display: none;
+  }
+
+  .main-header__burger {
+    width: 35px;
+    padding-top: 25px;
+    padding-right: 10px;
+  }
+
+  .error {
+    max-width: 300px;
+    margin: 98px auto 50px auto;
+  }
+
+  .error-title {
+    font-size: 20px;
+  }
+  .error-title::before {
+    transform: scale(0.65);
+    bottom: -32px;
+  }
+
+  .error-text {
+    width: 300px;
+    font-size: 14px;
+  }
+
+  .button_primary {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .error-button {
+    margin-top: 25px;
+    margin-bottom: 40px;
+  }
+
+  .video {
+    width: 300px;
+    height: 169px;
+    margin-bottom: 30px;
+  }
+
+  .support-message {
+    width: 260px;
+    font-size: 12px;
+    line-height: 19px;
+  }
+
+  .main-footer-wrapper {
+    width: 300px;
+    padding: 60px 0 36px 0;
+    column-gap: 20px;
+    row-gap: 0px;
+    grid-template-columns: 140px 140px;
+    grid-template-rows: 145px 198px 241px 17px;
+    grid-template-areas:
+      "logo nav"
+      "logos nav"
+      "donate donate"
+      "social social";
+  }
+
+  .footer-logo {
+    width: 60px;
+    height: 47px;
+  }
+
+  .promo-logos {
+    margin-top: 0;
+    gap: 20px;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+
+  .yem-logo {
+    width: 80px;
+    order: 1;
+  }
+
+  .rs-logo {
+    width: 84px;
+    order: -1;
+  }
+
+  .footer-navigation-title {
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .footer-navigation-item a {
+    margin-bottom: 21px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .donate-title {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .donate-text {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .donate-button {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .button_secondary-invert {
+    padding: 20px 74px;
+  }
+
+  .footer-social {
+    height: auto;
+    margin-top: 0px;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .footer-social-item a {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .footer-copyrights {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .container {
+    width: 300px;
+  }
+
 }
