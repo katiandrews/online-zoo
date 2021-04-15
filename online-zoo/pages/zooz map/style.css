@@ -437,7 +437,8 @@ body {
   }
 
   .map-pin:first-of-type {
-    top: 94px;
+    top: auto;
+    bottom: 538px;
     left: 1px;
   }
 
