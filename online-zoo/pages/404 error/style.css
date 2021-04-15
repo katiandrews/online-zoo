@@ -301,7 +301,7 @@ body {
   color: #1c54a8;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1919px) {
   .main-header {
     max-width: 1120px;
     margin: 0 auto;
@@ -428,7 +428,7 @@ body {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1199px) {
   .main-header {
     display: flex;
     justify-content: space-between;
@@ -581,7 +581,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 639px) {
   .main-header {
     height: 59px;
   }
