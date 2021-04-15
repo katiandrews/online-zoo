@@ -347,7 +347,7 @@ body {
   stroke-width: 2px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .background-img {
     background-size: 1400px 1410px;
     background-position: bottom -383px left 0px;
@@ -491,7 +491,7 @@ body {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1199px) {
   .background-img {
     background-position: top -328px left -341px;
     overflow: hidden;
@@ -604,7 +604,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 639px) {
   .background-img {
     background-size: 836px 842px;
     background-position: top -204px left -204px;

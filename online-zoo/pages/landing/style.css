@@ -1036,7 +1036,7 @@ main {
   color: #BCBCBC;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1919px) {
   .main-header {
     max-width: 1120px;
   }
@@ -1570,7 +1570,7 @@ main {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1199px) {
   .main-header {
     display: flex;
     justify-content: space-between;
@@ -2047,7 +2047,7 @@ main {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 639px) {
   .main-header__logo {
     width: 38px;
     padding: 15px 0 15px 10px;
