@@ -106,8 +106,8 @@ body {
 
 .main-header {
   box-sizing: border-box;
-  max-width: 1800px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0 60px;
   margin-top: 25px;
   display: flex;
   flex-direction: row;
@@ -1038,7 +1038,8 @@ main {
 
 @media (max-width: 1919px) {
   .main-header {
-    max-width: 1120px;
+    max-width: 100%;
+    margin: 25px 40px 0 40px;
   }
 
   .nav-list {
@@ -1575,7 +1576,7 @@ main {
     display: flex;
     justify-content: space-between;
     max-width: 100%;
-    margin-top: 0;
+    margin: 0;
     border: none;
     box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.04);
   }
