@@ -1233,6 +1233,13 @@ main {
     padding: 0;
   }
 
+  .other-cams-title::after {
+    display: inline-block;
+    height: 30px;
+    top: 4px;
+    transform: rotate(180deg);
+  }
+
   .video-slider {
     width: 100%;
     flex-direction: column;
@@ -1550,6 +1557,10 @@ main {
     overflow-y: hidden;
     margin-top: 0;
     padding: 0;
+  }
+
+  .other-cams-title::after {
+    display: none;
   }
 
   .video-slider {
