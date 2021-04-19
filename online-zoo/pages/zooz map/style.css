@@ -498,9 +498,11 @@ body {
   }
 
   .main-header {
+    top: 2px;
     border: none;
     background: none;
     box-shadow: none;
+    margin: 0;
   }
 
   .main-header__logo {
@@ -616,6 +618,7 @@ body {
   }
   .main-header {
     height: 59px;
+    top: 0px;
   }
 
   .main-header__logo {
