@@ -430,12 +430,17 @@ body {
 
 @media (max-width: 1199px) {
   .main-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fcfcfc;
     display: flex;
     justify-content: space-between;
     max-width: 100%;
     margin-top: 0;
     border: none;
     box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.04);
+    z-index: 2;
   }
 
   .main-header__logo {
@@ -466,7 +471,7 @@ body {
 
   .error {
     max-width: 600px;
-    margin: 158px auto 60px auto;
+    margin: 246px auto 60px auto;
   }
 
   .error-title {
@@ -609,7 +614,7 @@ body {
 
   .error {
     max-width: 300px;
-    margin: 98px auto 50px auto;
+    margin: 157px auto 50px auto;
   }
 
   .error-title {
