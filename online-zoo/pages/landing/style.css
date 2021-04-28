@@ -1,5 +1,5 @@
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   background: #fcfcfc;
 }
 
@@ -52,7 +52,7 @@ body {
 }
 
 .button_secondary:active {
-  border: 2px solid #3888FF;
+  border: 2px solid #3888ff;
 }
 
 .button_secondary-invert {
@@ -69,11 +69,11 @@ body {
 }
 
 .button_secondary-invert:hover {
-  border: 2px solid rgba(252, 252, 252, .6);
+  border: 2px solid rgba(252, 252, 252, 0.6);
 }
 
 .button_secondary-invert:active {
-  border: 2px solid #3888FF;
+  border: 2px solid #3888ff;
 }
 
 .slider-button-left {
@@ -268,7 +268,7 @@ main {
 .promo-description {
   position: relative;
   vertical-align: middle;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   margin-bottom: 60px;
   font-size: 84px;
   line-height: 106px;
@@ -290,7 +290,6 @@ main {
   width: 573px;
   justify-content: space-between;
 }
-
 
 .promo-img {
   width: 696px;
@@ -332,12 +331,12 @@ main {
   font-size: 22px;
   line-height: 26px;
   letter-spacing: 0.115em;
-  color: #0B0B0B;
+  color: #0b0b0b;
 }
 
 .how-works-description {
   margin-bottom: 40px;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 145%;
@@ -356,7 +355,7 @@ main {
 }
 
 .famous-pets {
-  background: #D9E8FF;
+  background: #d9e8ff;
   padding: 100px 0;
 }
 
@@ -377,12 +376,12 @@ main {
   font-size: 22px;
   line-height: 26px;
   letter-spacing: 0.115em;
-  color: #0B0B0B;
+  color: #0b0b0b;
 }
 
 .famous-pets-description {
   margin-bottom: 55px;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 145%;
@@ -402,18 +401,19 @@ main {
 }
 
 .famous-pets-slider {
+  position: relative;
   display: grid;
   gap: 40px;
   grid-template-rows: repeat(2, 328px);
   grid-template-columns: repeat(auto-fill, 328px);
   grid-auto-flow: column;
+  transition: 400ms ease-in-out;
 }
 
 .famous-pets-slider-item {
   position: relative;
   width: 328px;
   height: 328px;
-  /*background: url("../../assets/images/little-panda.jpg");*/
   border-radius: 5px;
 }
 
@@ -456,7 +456,6 @@ main {
 
 .famous-pets-slider-item:hover::before {
   filter: blur(1px) brightness(0.98);
-
 }
 
 .famous-pets-slider-item:hover .plus-button {
@@ -465,8 +464,8 @@ main {
   width: 238px;
   height: 238px;
   background-image: none;
-  background-color: rgba(11, 11, 11, .1);
-  border: 2px solid rgba(252, 252, 252, .3);
+  background-color: rgba(11, 11, 11, 0.1);
+  border: 2px solid rgba(252, 252, 252, 0.3);
 }
 
 .famous-pets-card-title {
@@ -477,7 +476,7 @@ main {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
-  color: #FCFCFC;
+  color: #fcfcfc;
   opacity: 0.8;
   transition-duration: 250ms;
 }
@@ -498,7 +497,7 @@ main {
   text-align: center;
   font-size: 18px;
   line-height: 154%;
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 
 .famous-pets-slider-item:hover .famous-pets-card-description {
@@ -519,7 +518,7 @@ main {
   width: 76px;
   height: 76px;
   background: url("../../assets/icons/plus.svg") no-repeat center;
-  border: 2px solid rgba(252, 252, 252, .6);
+  border: 2px solid rgba(252, 252, 252, 0.6);
   border-radius: 50%;
 }
 
@@ -550,7 +549,7 @@ main {
   font-size: 22px;
   line-height: 26px;
   letter-spacing: 0.115em;
-  color: #0B0B0B;
+  color: #0b0b0b;
 }
 
 .feed-step {
@@ -608,11 +607,11 @@ main {
 .feed-step-title {
   margin-bottom: 30px;
   width: 440px;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 145%;
-  color: #0F0049;
+  color: #0f0049;
 }
 
 .feed-step-description {
@@ -640,16 +639,16 @@ main {
   font-size: 22px;
   line-height: 26px;
   letter-spacing: 0.115em;
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 
 .testimonials-description {
   margin-bottom: 40px;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 145%;
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 
 .testimonials-text {
@@ -742,11 +741,13 @@ main {
 
 .testimonials-arrow {
   display: inline-block;
-  background: url("../../assets/icons/black-arrow-left.svg") #fcfcfc no-repeat center;
+  background: url("../../assets/icons/black-arrow-left.svg") #fcfcfc no-repeat
+    center;
 }
 
 .testimonials-arrow:last-child {
-  background: url("../../assets/icons/black-arrow-right.svg") #fcfcfc no-repeat center;
+  background: url("../../assets/icons/black-arrow-right.svg") #fcfcfc no-repeat
+    center;
   margin-left: 16px;
 }
 
@@ -760,7 +761,8 @@ main {
   column-gap: 24px;
   grid-template-columns: 344px 1223px;
   grid-template-rows: 138px auto;
-  grid-template-areas: "title map"
+  grid-template-areas:
+    "title map"
     "card map";
 }
 
@@ -776,12 +778,18 @@ main {
 }
 
 .map-card {
+  position: relative;
   grid-area: card;
   align-self: start;
-  background: url("../../assets/icons/card-image.jpg") top no-repeat;
+  height: 512px;
+  background-image: url("../../assets/icons/card-image.jpg");
+  background-color: #fff;
+  background-position: top;
+  background-repeat: no-repeat;
   background-size: 100% 42.6%;
   box-shadow: 4px 12px 22px rgba(0, 0, 0, 0.06);
   border-radius: 15px;
+  transition: 500ms ease-in-out;
 }
 
 .map-card-info {
@@ -789,13 +797,14 @@ main {
   flex-direction: column;
   align-items: center;
   margin-top: 218px;
+  box-sizing: border-box;
   background-color: #fcfcfc;
   padding: 20px 40px 45px;
   border-radius: 0 0 15px 15px;
 }
 
 .map-card-title {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 36px;
@@ -812,8 +821,9 @@ main {
 
 .map-card .button-link {
   margin-left: 6px;
-  margin-top: 52px;
-  color: #3888FF;
+  position: absolute;
+  bottom: 45px;
+  color: #3888ff;
 }
 
 .worldmap {
@@ -864,6 +874,7 @@ main {
 .map-pin.active {
   width: 96px;
   height: 124px;
+  transform: translateX(-6px);
 }
 
 .map-pin.active .outer {
@@ -875,7 +886,7 @@ main {
   transition-duration: 250ms;
   width: 96px;
   height: 124px;
-  transform: translateX(-13px);
+  transform: translateX(-6px);
 }
 
 .map-pin:hover .outer {
@@ -909,7 +920,7 @@ main {
 }
 
 .main-footer {
-  background: #0B0B0B;
+  background: #0b0b0b;
   padding-bottom: 59px;
 }
 
@@ -940,7 +951,7 @@ main {
   gap: 24px;
   font-size: 16px;
   line-height: 19px;
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 
 .footer-navigation {
@@ -952,7 +963,7 @@ main {
   font-size: 22px;
   line-height: 26px;
   letter-spacing: 0.115em;
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 
 .footer-navigation-item a {
@@ -960,7 +971,7 @@ main {
   margin-bottom: 30px;
   font-size: 18px;
   line-height: 28px;
-  color: #BCBCBC;
+  color: #bcbcbc;
 }
 
 .footer-navigation-item:last-child a {
@@ -980,13 +991,13 @@ main {
   font-size: 22px;
   line-height: 26px;
   letter-spacing: 0.115em;
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 
 .donate-text {
   font-size: 18px;
   line-height: 28px;
-  color: #BCBCBC;
+  color: #bcbcbc;
 }
 
 .donate-button {
@@ -995,8 +1006,8 @@ main {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
-  color: #FCFCFC;
-  border: 2px solid #FCFCFC;
+  color: #fcfcfc;
+  border: 2px solid #fcfcfc;
   box-sizing: border-box;
   border-radius: 5px;
 }
@@ -1013,7 +1024,7 @@ main {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #BCBCBC;
+  color: #bcbcbc;
 }
 
 .footer-social-item a:hover {
@@ -1033,7 +1044,177 @@ main {
   font-size: 16px;
   line-height: 145%;
   text-align: right;
-  color: #BCBCBC;
+  color: #bcbcbc;
+}
+
+.pop-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  top: 0;
+  left: 0;
+}
+
+.pop-up_content {
+  width: fit-content;
+  padding: 30px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background: #fcfcfc;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.07);
+  border-radius: 15px;
+}
+
+@media (max-width: 1919px) {
+  .pop-up_content {
+    padding: 30px 40px 50px;
+    gap: 34px;
+  }
+}
+
+@media (max-width: 639px) {
+  .pop-up_content {
+    padding: 30px 20px 30px;
+    gap: 30px;
+  }
+}
+
+.application-form_title {
+  font-family: "Merriweather", serif;
+  font-size: 36px;
+  line-height: 145%;
+}
+
+@media (max-width: 1919px) {
+  .application-form_title {
+    font-size: 28px;
+  }
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+@media (max-width: 639px) {
+  .application-form {
+    gap: 25px;
+  }
+}
+
+.input-label {
+  font-size: 16px;
+  line-height: 145%;
+  color: #7b7b7b;
+}
+
+@media (max-width: 1919px) {
+  .input-label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 639px) {
+  .input-label {
+    font-size: 12px;
+  }
+}
+
+.input {
+  width: 100%;
+  padding: 2px 0 7px 0;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #d3d3d3;
+  font-size: 20px;
+  line-height: 135%;
+}
+
+.input:focus-visible {
+  border-bottom: 2px solid #000;
+  outline: none;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b5b5b5;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #b5b5b5;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #b5b5b5;
+}
+
+@media (max-width: 1919px) {
+  .input {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 639px) {
+  .input {
+    font-size: 14px;
+  }
+}
+
+textarea {
+  padding: 15px;
+  box-sizing: border-box;
+  margin-top: 12px;
+  width: 100%;
+  height: 100px;
+  background: none;
+  border: 2px solid #d3d3d3;
+}
+
+@media (max-width: 1919px) {
+  .textarea {
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 639px) {
+  .textarea {
+    height: 90px;
+  }
+}
+
+.button_primary.button_form {
+  padding: 22px 110px;
+}
+
+@media (max-width: 1919px) {
+  .button_primary.button_form {
+    padding: 16px 78px;
+  }
+}
+
+@media (max-width: 639px) {
+  .button_primary.button_form {
+    padding: 20px 41px;
+  }
+}
+
+.button_disabled {
+  background: #d3d3d3;
+  border: none;
+}
+
+.button_disabled:hover {
+  background: #d3d3d3;
 }
 
 @media (max-width: 1919px) {
@@ -1406,7 +1587,6 @@ main {
     row-gap: 25px;
   }
 
-
   .testimonials-card {
     padding: 30px 30px 59px;
   }
@@ -1449,6 +1629,7 @@ main {
 
   .map-card {
     background-size: 100% 44%;
+    height: 448px;
   }
 
   .map-card-info {
@@ -1468,7 +1649,7 @@ main {
   }
 
   .map-card .button-link {
-    margin-top: 44px;
+    bottom: 40px;
   }
 
   .worldmap {
@@ -1605,7 +1786,7 @@ main {
     margin-left: auto;
     display: block;
     padding: 23px 20px 0 0;
-  } 
+  }
 
   .sidebar {
     display: none;
@@ -1929,16 +2110,19 @@ main {
     padding-bottom: 0;
     display: flex;
     flex-direction: column;
-   }
+  }
 
   .map-title {
     display: none;
   }
   .map-card {
     width: 250px;
+    height: 390px;
     grid-area: none;
     align-self: center;
-    background: url("../../assets/icons/card-image.jpg") top no-repeat;
+    background-image: url("../../assets/icons/card-image.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
     background-size: 100% 40%;
     box-shadow: 4px 12px 22px rgba(0, 0, 0, 0.06);
     border-radius: 15px;
@@ -1958,7 +2142,7 @@ main {
   }
   .map-card .button-link {
     width: auto;
-    margin-top: 40px;
+    bottom: 30px;
   }
   .worldmap {
     margin-top: -70px;
@@ -1997,10 +2181,10 @@ main {
     row-gap: 60px;
     grid-template-columns: 180px 390px;
     grid-template-rows: 74px 230px 79px;
-    grid-template-areas: 
-    "logo logos"
-    "nav  donate"
-    "nav  social";
+    grid-template-areas:
+      "logo logos"
+      "nav  donate"
+      "nav  social";
   }
   .footer-logo {
     width: 95px;
