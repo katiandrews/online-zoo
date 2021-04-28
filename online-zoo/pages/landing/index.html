@@ -389,7 +389,7 @@
         </div>
         <div class="worldmap">
           <svg
-            class="map-pin active"
+            class="map-pin map-pin-eagle active"
             viewBox="-1 0 72 89"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -429,7 +429,7 @@
             </defs>
           </svg>
           <svg
-            class="map-pin"
+            class="map-pin map-pin-alligator"
             viewBox="-1 0 72 89"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -477,7 +477,7 @@
             />
           </svg>
           <svg
-            class="map-pin"
+            class="map-pin map-pin-gorilla"
             viewBox="-1 0 72 89"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -513,7 +513,7 @@
             />
           </svg>
           <svg
-            class="map-pin"
+            class="map-pin map-pin-panda"
             viewBox="-1 0 72 89"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -629,5 +629,37 @@
         </div>
       </div>
     </footer>
+    <div class="pop-up visually-hidden">
+      <div class="pop-up_content">
+        <p class="application-form_title">Your feedback</p>
+        <form action="" class="application-form">
+          <label for="" class="input-label"
+            >Your name:<br />
+            <input class="input" type="text" placeholder="Ellie Coward" />
+          </label>
+          <label for="" class="input-label"
+            >Your email:<br />
+            <input class="input" type="email" placeholder="example@gmail.com"
+          /></label>
+          <label for="textarea" class="input-label"
+            >Your review:<br />
+            <textarea
+              class="textarea"
+              id="textarea"
+              name="review"
+              maxlength="280"
+              required
+            ></textarea>
+          </label>
+          <input
+            class="button_primary button_form button_disabled"
+            type="submit"
+            value="Send for moderation"
+            disabled="disabled"
+          />
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
