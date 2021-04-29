@@ -1,5 +1,5 @@
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   height: 100vh;
 }
 
@@ -57,11 +57,11 @@ body {
 }
 
 .button_secondary-invert:hover {
-  border: 2px solid rgba(252, 252, 252, .6);
+  border: 2px solid rgba(252, 252, 252, 0.6);
 }
 
 .button_secondary-invert:active {
-  border: 2px solid #3888FF;
+  border: 2px solid #3888ff;
 }
 
 .button-link {
@@ -275,7 +275,7 @@ body {
 }
 
 .map-card-title {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 36px;
@@ -293,7 +293,7 @@ body {
 .map-card .button-link {
   margin-left: 6px;
   margin-top: 24px;
-  color: #3888FF;
+  color: #3888ff;
 }
 
 .map-pin {
@@ -457,6 +457,12 @@ body {
     left: 1111px;
   }
 
+  .map-pin:not(.active):hover {
+    width: 64px;
+    height: 82px;
+    transform: translateX(-5px);
+  }
+
   .map-card {
     bottom: 45px;
     left: 362px;
@@ -548,7 +554,7 @@ body {
     justify-content: space-between;
   }
 
-  .sidebar>a:first-of-type {
+  .sidebar > a:first-of-type {
     display: none;
   }
 
