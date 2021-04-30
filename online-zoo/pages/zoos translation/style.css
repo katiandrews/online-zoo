@@ -461,6 +461,7 @@ main {
 .accordeon-title-wrapper {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .item-title {
