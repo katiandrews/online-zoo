@@ -64,5 +64,6 @@ document.querySelector('.map-pin-panda').addEventListener('click', function(even
 document.querySelector('.background-img').addEventListener('mousedown', function(event) {
   if (event.target !== mapCard && !mapCard.contains(event.target)) {
     mapCard.classList.add('visually-hidden');
+    removeActive();
   }
 });
