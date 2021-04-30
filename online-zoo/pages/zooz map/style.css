@@ -5,7 +5,7 @@ body {
 
 .background-img {
   position: relative;
-  background: url("../../assets/images/map.jpg") no-repeat #fcfcfc;
+  background: url("../../assets/images/map.jpg") repeat #fcfcfc;
   background-position: bottom -630px left -99px;
   height: 100vh;
 }
@@ -259,6 +259,7 @@ body {
   width: 344px;
   height: 512px;
   background: url("../../assets/images/gorilla-card.jpg") top no-repeat;
+  background-color: #fcfcfc;
   background-size: 100% 42.6%;
   box-shadow: 4px 12px 22px rgba(0, 0, 0, 0.06);
   border-radius: 15px;
@@ -291,8 +292,8 @@ body {
 }
 
 .map-card .button-link {
-  margin-left: 6px;
-  margin-top: 24px;
+  position: absolute;
+  bottom: 40px;
   color: #3888ff;
 }
 
@@ -308,7 +309,7 @@ body {
   transition-duration: 250ms;
   width: 96px;
   height: 124px;
-  transform: translateX(-7px);
+  transform: translateX(-5px);
 }
 
 .map-pin:hover .outer {
@@ -340,6 +341,7 @@ body {
 .map-pin.active {
   width: 96px;
   height: 124px;
+  transform: translateX(-6.5px);
 }
 
 .map-pin.active .outer {
@@ -460,7 +462,7 @@ body {
   .map-pin:not(.active):hover {
     width: 64px;
     height: 82px;
-    transform: translateX(-5px);
+    transform: translateX(-7px);
   }
 
   .map-card {
@@ -469,6 +471,7 @@ body {
     width: 292px;
     height: 448px;
     background: url(../../assets/images/gorilla-card.jpg) top no-repeat;
+    background-color: #fcfcfc;
     background-size: 100% 42.6%;
   }
 
@@ -493,7 +496,7 @@ body {
   }
 
   .map-card .button-link {
-    margin-top: 19px;
+    bottom: 40px;
   }
 }
 
