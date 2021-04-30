@@ -1620,6 +1620,7 @@ main {
   }
 
   .item-content {
+    max-width: 300px;
     font-size: 14px;
     line-height: 22px;
   }
