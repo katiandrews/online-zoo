@@ -68,13 +68,52 @@ function scroll(direction) {
   const slider = document.querySelector('.testimonials-slider');
   const card = document.querySelector('.testimonials-card');
   const gap = Number(getComputedStyle(slider).getPropertyValue('gap').match(/\d+/)[0]);
-  slider.style.direction = card.offsetWidth + gap;
+  /* slider.style.direction = card.offsetWidth + gap; */
   if (direction === 'left') {
+    let delay;
+    clearTimeout(delay);
+    slider.animate([
+      { transform: `translateX(0px)` },
+      { transform: `translateX(-${card.offsetWidth + gap}px)` }
+    ], 
+    {
+      duration: 300,
+      fill: "forwards"
+    });
+    delay = setTimeout(function() {
+    slider.animate([
+    { transform: 'translateX(0px)' }
+  ],
+  {
+    duration: 0,
+    fill: "forwards"
+  });
     addSlidesToEnd(slider, 1);
-  } else {
+  }, 300);
+  } else if (direction === 'right') {
+    let delay;
+    clearTimeout(delay);
+    slider.animate([
+      { transform: `translateX(0px)` },
+      { transform: `translateX(${card.offsetWidth + gap}px)` },
+     
+    ], 
+    {
+      duration: 300,
+      fill: "forwards"
+    });
+    delay = setTimeout(function() {
+    slider.animate([
+    { transform: 'translateX(0px)' }
+  ],
+  {
+    duration: 0,
+    fill: "forwards"
+  });
     addSlidesToBeginning(slider, 1);
+  }, 300);
   } 
-}
+};
 
 let autoScroll = setInterval(() => scroll('right'), 10000);
 let delayTime = null;
