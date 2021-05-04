@@ -25,11 +25,37 @@ function addSlidesToBeginning(container, number) {
 }
 
 petsNext.addEventListener('click', function() {
-  sliderWrapper.style.right = slideWidth + gap;
-  addSlidesToEnd(slider, 2);
+  let delay;
+  clearTimeout(delay);
+  slider.animate([
+    { transform: 'translateX(0px)' },
+    { transform: `translateX(-${slideWidth + gap}px)` }
+  ],
+  {
+    duration: 300,
+    fill: "forwards"
+  });
+  delay = setTimeout(function() {
+    slider.animate([
+    { transform: 'translateX(0px)' }
+  ],
+  {
+    duration: 0,
+    fill: "forwards"
+  });
+    addSlidesToEnd(slider, 2);
+  }, 310);
 });
+
 petsPrev.addEventListener('click', function() {
-  sliderWrapper.style.left = -(slideWidth + gap);
+  slider.animate([
+    { transform: `translateX(-${slideWidth + gap}px)` },
+    { transform: 'translateX(0px)' },
+  ],
+  {
+    duration: 300,
+    fill: "forwards"
+  });
   addSlidesToBeginning(slider, 2);
 });
 
