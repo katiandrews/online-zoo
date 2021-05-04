@@ -490,16 +490,29 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+  transition-duration: 200ms;
 }
 
 .item-content {
+  visibility: visible;
   width: 1380px;
+  height: auto;
+  opacity: 1;
   margin-top: 30px;
   margin-bottom: 30px;
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
   color: #747474;
+  transition-duration: 200ms;
+}
+
+.item-content.visually-hidden {
+  height: 0px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  transition-duration: 100ms;
 }
 
 .link-item {
@@ -515,6 +528,7 @@ main {
   background-color: #d3d3d3;
   margin-top: 25px;
   margin-bottom: 32px;
+  transition-duration: 200ms;
 }
 
 .feed {
