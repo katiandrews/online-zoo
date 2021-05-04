@@ -1,35 +1,86 @@
+// famous pets slider
+const sliderWrapper = document.querySelector('.famous-pets-slider-wrapper');
 const slider = document.querySelector('.famous-pets-slider');
 const gap = Number(getComputedStyle(slider).getPropertyValue('gap').match(/\d+/)[0]);
-const sliderWrapper = document.querySelector('.famous-pets-slider-wrapper');
-const slides = [...document.querySelectorAll('.famous-pets-slider-item')];
-let clones = [];
 const petsPrev = document.querySelector('.famous-pets-button.slider-button-left');
 const petsNext = document.querySelector('.famous-pets-button.slider-button-right');
+const slideWidth = document.querySelector('.famous-pets-slider-item').offsetWidth;
 
-/* slides.forEach(item => {
-  let clone = item.cloneNode(true);
-  clone.classList.add('clone');
-  slider.appendChild(clone);
-  clones.push(clone);
-}) */
-
-function moveSlider() {
-  let sliderWidth = slider.offsetWidth;
-  if ((parseInt(slider.style.right) || 0) + sliderWidth > sliderWidth + gap) {
-    slider.style.right = 0 + 'px';
-  } else {
-    console.log((parseInt(slider.style.right) || 0) + sliderWidth + gap);
-    slider.style.right = ((parseInt(slider.style.right) || 0) + sliderWidth + gap) + 'px';
+function addSlidesToEnd(container, number) {
+  for (let i = 0; i < number; i += 1) {
+    let firstSlide = container.firstElementChild;
+    let newSlide = firstSlide.cloneNode(true);
+    container.appendChild(newSlide);
+    firstSlide.remove();
   }
 }
 
-petsNext.addEventListener('click', function(event) {
-  moveSlider();
+function addSlidesToBeginning(container, number) {
+  for (let i = 0; i < number; i += 1) {
+    let lastSlide = container.lastElementChild;
+    let newSlide = lastSlide.cloneNode(true);
+    container.insertBefore(newSlide, container.firstElementChild);
+    lastSlide.remove();
+  }
+}
+
+petsNext.addEventListener('click', function() {
+  sliderWrapper.style.right = slideWidth + gap;
+  addSlidesToEnd(slider, 2);
+});
+petsPrev.addEventListener('click', function() {
+  sliderWrapper.style.left = -(slideWidth + gap);
+  addSlidesToBeginning(slider, 2);
 });
 
-petsPrev.addEventListener('click', function(event) {
-  moveSlider();
+// ====================
+// testimonials slider
+const testimonialsPrev = document.querySelector('.testimonials-arrow.slider-button-left');
+const testimonialsNext = document.querySelector('.testimonials-arrow.slider-button-right');
+
+function scroll(direction) {
+  const slider = document.querySelector('.testimonials-slider');
+  const card = document.querySelector('.testimonials-card');
+  const gap = Number(getComputedStyle(slider).getPropertyValue('gap').match(/\d+/)[0]);
+  slider.style.direction = card.offsetWidth + gap;
+  if (direction === 'left') {
+    addSlidesToEnd(slider, 1);
+  } else {
+    addSlidesToBeginning(slider, 1);
+  } 
+}
+
+let autoScroll = setInterval(() => scroll('right'), 10000);
+let delayTime = null;
+
+// add delay when next, prev or testiomonial is clicked
+function delayScroll() {
+  clearTimeout(delayTime);
+  clearInterval(autoScroll);
+    delayTime = setTimeout(function() {
+    autoScroll = setInterval(() => scroll('right'), 10000);
+  }, 10000);
+}
+
+testimonialsNext.addEventListener('click', function() {
+  delayScroll();
+  scroll('left');
 });
+
+testimonialsPrev.addEventListener('click', function() {
+  delayScroll();
+  scroll('right');
+});
+
+document.querySelector('.testimonials-slider').addEventListener('click', function(event) {
+  const testimonialsCards = document.querySelectorAll('.testimonials-card');
+  for (let i = 0; i < testimonialsCards.length; i += 1) {
+    if (event.target === testimonialsCards[i] || testimonialsCards[i].contains(event.target)) {
+      delayScroll();
+    }
+  }
+});
+
 
 //====================
 // change map-card info 
