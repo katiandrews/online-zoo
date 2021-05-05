@@ -2,6 +2,7 @@
 const mapCard = document.querySelector('.map-card');
 let mapCardTitle = document.querySelector('.map-card-title');
 let mapCardDescription = document.querySelector('.map-card-description');
+let mapCardLink = mapCard.querySelector('.button-link');
 
 // remove class 'active' from pins
 function removeActive() {
@@ -25,6 +26,7 @@ document.querySelector('.map-pin-alligator').addEventListener('click', function(
     mapCard.style.left = "300px";
   }
   mapCardDescription.textContent = 'The broadcast is from Florida. See their real life.';
+  mapCardLink.href = "../zoos translation/alligator.html";
   mapCard.classList.remove('visually-hidden');
 })
 
@@ -41,6 +43,7 @@ document.querySelector('.map-pin-gorilla').addEventListener('click', function(ev
   }
   mapCardTitle.textContent = 'Gorilla';
   mapCardDescription.textContent = 'The broadcast comes from the Democratic Republic of the Congo in a forest area. Watch their life and life together';
+  mapCardLink.href = "../zoos translation/gorilla.html";
   mapCard.classList.remove('visually-hidden');
 })
 
@@ -57,6 +60,7 @@ document.querySelector('.map-pin-panda').addEventListener('click', function(even
   mapCard.style.backgroundImage = 'url("../../assets/images/panda-card.jpg")';
   mapCardTitle.textContent = 'Panda';
   mapCardDescription.textContent = 'The broadcast comes from the mountainous regions of central China: Sichuan and Tibet. See their real life together.';
+  mapCardLink.href = "../zoos translation/panda.html";
   mapCard.classList.remove('visually-hidden');
 })
 
