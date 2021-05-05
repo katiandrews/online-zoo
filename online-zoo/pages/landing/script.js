@@ -152,6 +152,7 @@ document.querySelector('.testimonials-slider').addEventListener('click', functio
 const mapCard = document.querySelector('.map-card');
 let mapCardTitle = document.querySelector('.map-card-title');
 let mapCardDescription = document.querySelector('.map-card-description');
+let mapCardLink = mapCard.querySelector('.button-link');
 
 // remove class 'active' from pins
 function removeActive() {
@@ -168,6 +169,7 @@ document.querySelector('.map-pin-alligator').addEventListener('click', function(
   mapCard.style.backgroundImage = 'url("../../assets/images/alligator-card.jpg")';
   mapCardTitle.textContent = 'Alligator';
   mapCardDescription.textContent = 'The broadcast is from Florida. See their real life.';
+  mapCardLink.href = "../zoos translation/alligator.html";
 })
 
 document.querySelector('.map-pin-eagle').addEventListener('click', function(event) {
@@ -176,6 +178,7 @@ document.querySelector('.map-pin-eagle').addEventListener('click', function(even
   mapCard.style.backgroundImage = 'url("../../assets/icons/card-image.jpg")';
   mapCardTitle.textContent = 'Eagle';
   mapCardDescription.textContent = 'The broadcast is from an island near Los Angeles. Watch their real life.';
+  mapCardLink.href = "../zoos translation/eagle.html";
 })
 
 document.querySelector('.map-pin-gorilla').addEventListener('click', function(event) {
@@ -184,6 +187,7 @@ document.querySelector('.map-pin-gorilla').addEventListener('click', function(ev
   mapCard.style.backgroundImage = 'url("../../assets/images/gorilla-card.jpg")';
   mapCardTitle.textContent = 'Gorilla';
   mapCardDescription.textContent = 'The broadcast comes from the Democratic Republic of the Congo in a forest area. Watch their life and life together';
+  mapCardLink.href = "../zoos translation/gorilla.html";
 })
 
 document.querySelector('.map-pin-panda').addEventListener('click', function(event) {
@@ -192,6 +196,7 @@ document.querySelector('.map-pin-panda').addEventListener('click', function(even
   mapCard.style.backgroundImage = 'url("../../assets/images/panda-card.jpg")';
   mapCardTitle.textContent = 'Panda';
   mapCardDescription.textContent = 'The broadcast comes from the mountainous regions of central China: Sichuan and Tibet. See their real life together.';
+  mapCardLink.href = "../zoos translation/panda.html";
 })
 
 
