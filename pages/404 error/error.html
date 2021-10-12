@@ -5,26 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../normalize.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Error 404</title>
   </head>
   <body>
     <header class="main-header">
-      <a href="../landing/index.html"
-        ><img
-          class="main-header__logo"
-          src="../../assets/icons/logo.svg"
-          alt="logo"
-      /></a>
+      <a href="../landing/index.html"><img class="main-header__logo" src="../../assets/icons/logo.svg" alt="logo" /></a>
       <nav class="main-header__nav">
         <ul class="nav-list">
           <li class="nav-list__item">
@@ -38,22 +27,11 @@
             <a href="../404 error/error.html">Contact us</a>
           </li>
           <li class="nav-list__item">
-            <a
-              href="https://www.figma.com/file/74wXlorl9mZQP0uhqDg83j/Online-Zoo"
-              >Design</a
-            >
+            <a href="https://www.figma.com/file/74wXlorl9mZQP0uhqDg83j/Online-Zoo">Design</a>
           </li>
         </ul>
-        <img
-          src="../../assets/icons/profile.svg"
-          alt="profile"
-          class="main-header__profile-icon"
-        />
-        <img
-          src="../../assets/icons/burger_menu.svg"
-          alt="menu"
-          class="main-header__burger"
-        />
+        <img src="../../assets/icons/profile.svg" alt="profile" class="main-header__profile-icon" />
+        <img src="../../assets/icons/burger_menu.svg" alt="menu" class="main-header__burger" />
       </nav>
     </header>
     <main>
@@ -62,12 +40,9 @@
         <h2 class="error-title">Oops... you seem to be lost</h2>
         <p class="error-text">
           Just don't be discouraged, but there is no such page :(<br />
-          We can offer you to watch a video with cute pandas or return to the
-          main page
+          We can offer you to watch a video with cute pandas or return to the main page
         </p>
-        <a href="../landing/index.html" class="error-button button_primary"
-          >Back to main page</a
-        >
+        <a href="../landing/index.html" class="error-button button_primary">Back to main page</a>
         <iframe
           class="video"
           src="https://www.youtube.com/embed/wPTN0Wfgjg0?controls=0"
@@ -85,18 +60,10 @@
     <footer class="main-footer">
       <div class="main-footer-wrapper">
         <a href="../landing/index.html"
-          ><img
-            src="../../assets/icons/footer-logo.svg"
-            alt="logo"
-            class="footer-logo"
+          ><img src="../../assets/icons/footer-logo.svg" alt="logo" class="footer-logo"
         /></a>
         <div class="promo-logos">
-          <img
-            class="yem-logo"
-            src="../../assets/icons/yem_digital.svg"
-            alt="yem digital"
-            title="Yem Digital"
-          />
+          <img class="yem-logo" src="../../assets/icons/yem_digital.svg" alt="yem digital" title="Yem Digital" />
           x
           <img
             class="rs-logo"
@@ -129,12 +96,9 @@
         <div class="footer-donate">
           <h4 class="donate-title">Support of volunteers</h4>
           <p class="donate-text">
-            You can thank the volunteers for their work. For example, caring for
-            animals<br />and sincere love for them.
+            You can thank the volunteers for their work. For example, caring for animals<br />and sincere love for them.
           </p>
-          <a class="donate-button button_secondary-invert"
-            >Donate for volunteers
-          </a>
+          <a class="donate-button button_secondary-invert">Donate for volunteers </a>
         </div>
         <ul class="footer-social">
           <li class="footer-social-item">
@@ -151,29 +115,27 @@
       <div class="container">
         <hr class="footer-divider" />
         <div class="footer-copyrights">
-          <p class="footer-copyright">
-            Copyright ©RSSchool and ©Yem Digital 2020 - 2021
-          </p>
+          <p class="footer-copyright">Copyright ©RSSchool and ©Yem Digital 2020 - 2021</p>
           <p class="design-copyright">Designed by Vladislav Chernov</p>
         </div>
       </div>
     </footer>
     <script>
       // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement("script");
+      var tag = document.createElement('script');
 
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName("script")[0];
+      tag.src = 'https://www.youtube.com/iframe_api';
+      var firstScriptTag = document.getElementsByTagName('script')[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
       var player;
       function onYouTubeIframeAPIReady() {
-        player = new YT.Player("player", {
-          height: "390",
-          width: "640",
-          videoId: "M7lc1UVf-VE",
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'M7lc1UVf-VE',
           events: {
             onReady: onPlayerReady,
             onStateChange: onPlayerStateChange,

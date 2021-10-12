@@ -1,8 +1,7 @@
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   background: #fcfcfc;
 }
-
 .visually-hidden {
   visibility: hidden;
   position: absolute;
@@ -80,7 +79,7 @@ body {
   display: block;
   width: 65px;
   height: 65px;
-  background: url("../../assets/icons/left-arrow.svg") #0f0049 no-repeat center;
+  background: url('../../assets/icons/left-arrow.svg') #0f0049 no-repeat center;
   border-radius: 50%;
   border: none;
 }
@@ -93,7 +92,7 @@ body {
   display: block;
   width: 65px;
   height: 65px;
-  background: url("../../assets/icons/arrow-right.svg") #0f0049 no-repeat center;
+  background: url('../../assets/icons/arrow-right.svg') #0f0049 no-repeat center;
   border-radius: 50%;
   border: none;
 }
@@ -205,17 +204,17 @@ main {
   display: block;
   width: 48px;
   height: 48px;
-  background-image: url("../../assets/icons/instagram.svg");
+  background-image: url('../../assets/icons/instagram.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .social-list__item:nth-child(2) a {
-  background-image: url("../../assets/icons/fb.svg");
+  background-image: url('../../assets/icons/fb.svg');
 }
 
 .social-list__item:last-child a {
-  background-image: url("../../assets/icons/twitter.svg");
+  background-image: url('../../assets/icons/twitter.svg');
 }
 
 .social-list__item:hover a {
@@ -229,7 +228,7 @@ main {
   width: 48px;
   height: 48px;
   margin-bottom: 98px;
-  background: url("../../assets/icons/uparrow.svg") no-repeat center;
+  background: url('../../assets/icons/uparrow.svg') no-repeat center;
   border: 2px solid #f0f0f0;
   border-radius: 50%;
   cursor: pointer;
@@ -266,7 +265,7 @@ main {
 .promo-description {
   position: relative;
   vertical-align: middle;
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   margin-bottom: 60px;
   font-size: 84px;
   line-height: 106px;
@@ -274,8 +273,8 @@ main {
 }
 
 .promo-description::after {
-  content: "";
-  background-image: url("../../assets/icons/dot.svg");
+  content: '';
+  background-image: url('../../assets/icons/dot.svg');
   position: absolute;
   width: 14.31px;
   height: 14.5px;
@@ -334,7 +333,7 @@ main {
 
 .how-works-description {
   margin-bottom: 40px;
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 145%;
@@ -379,7 +378,7 @@ main {
 
 .famous-pets-description {
   margin-bottom: 55px;
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 145%;
@@ -426,7 +425,7 @@ main {
 }
 
 .famous-pets-slider-item::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 328px;
   height: 328px;
@@ -435,43 +434,43 @@ main {
 }
 
 .slider_little-panda::before {
-  background-image: url("../../assets/images/little-panda.jpg");
+  background-image: url('../../assets/images/little-panda.jpg');
 }
 
 .slider_panda::before {
-  background-image: url("../../assets/images/slider-panda.jpg");
+  background-image: url('../../assets/images/slider-panda.jpg');
 }
 
 .slider_penguin::before {
-  background-image: url("../../assets/images/penguin.jpg");
+  background-image: url('../../assets/images/penguin.jpg');
 }
 
 .slider_eagle::before {
-  background-image: url("../../assets/images/slider-eagle.jpg");
+  background-image: url('../../assets/images/slider-eagle.jpg');
 }
 
 .slider_squirrel::before {
-  background-image: url("../../assets/images/squirrel.jpg");
+  background-image: url('../../assets/images/squirrel.jpg');
 }
 
 .slider_gorilla::before {
-  background-image: url("../../assets/images/slider-gorilla.jpg");
+  background-image: url('../../assets/images/slider-gorilla.jpg');
 }
 
 .slider_tiger::before {
-  background-image: url("../../assets/images/slider-tiger.jpg");
+  background-image: url('../../assets/images/slider-tiger.jpg');
 }
 
 .slider_alligator::before {
-  background-image: url("../../assets/images/slider-croco.jpg");
+  background-image: url('../../assets/images/slider-croco.jpg');
 }
 
 .slider_leopard::before {
-  background-image: url("../../assets/images/slider-leopard.jpg");
+  background-image: url('../../assets/images/slider-leopard.jpg');
 }
 
 .slider_zebra::before {
-  background-image: url("../../assets/images/slider-zebra.jpg");
+  background-image: url('../../assets/images/slider-zebra.jpg');
 }
 
 .famous-pets-slider-item:hover::before {
@@ -537,7 +536,7 @@ main {
   box-sizing: border-box;
   width: 76px;
   height: 76px;
-  background: url("../../assets/icons/plus.svg") no-repeat center;
+  background: url('../../assets/icons/plus.svg') no-repeat center;
   border: 2px solid rgba(252, 252, 252, 0.6);
   border-radius: 50%;
 }
@@ -586,10 +585,10 @@ main {
   position: absolute;
   top: 258.5px;
   left: 472px;
-  content: "";
+  content: '';
   width: 207px;
   height: 100px;
-  background: url("../../assets/icons/feed-arrow1.svg") center;
+  background: url('../../assets/icons/feed-arrow1.svg') center;
 }
 
 .feed-step:nth-of-type(2) {
@@ -602,10 +601,10 @@ main {
   position: absolute;
   top: 47%;
   left: -268px;
-  content: "";
+  content: '';
   width: 242px;
   height: 197px;
-  background: url("../../assets/icons/feed-arrow-2.svg") right;
+  background: url('../../assets/icons/feed-arrow-2.svg') right;
 }
 
 .feed-step-img {
@@ -627,7 +626,7 @@ main {
 .feed-step-title {
   margin-bottom: 30px;
   width: 440px;
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 145%;
@@ -668,7 +667,7 @@ main {
 
 .testimonials-description {
   margin-bottom: 40px;
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 145%;
@@ -693,9 +692,9 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 512px);
   grid-template-areas:
-    "link link"
-    "slider slider"
-    "buttons buttons";
+    'link link'
+    'slider slider'
+    'buttons buttons';
   column-gap: 40px;
   row-gap: 25px;
   overflow: hidden;
@@ -769,13 +768,11 @@ main {
 
 .testimonials-arrow {
   display: inline-block;
-  background: url("../../assets/icons/black-arrow-left.svg") #fcfcfc no-repeat
-    center;
+  background: url('../../assets/icons/black-arrow-left.svg') #fcfcfc no-repeat center;
 }
 
 .testimonials-arrow:last-child {
-  background: url("../../assets/icons/black-arrow-right.svg") #fcfcfc no-repeat
-    center;
+  background: url('../../assets/icons/black-arrow-right.svg') #fcfcfc no-repeat center;
   margin-left: 16px;
 }
 
@@ -790,8 +787,8 @@ main {
   grid-template-columns: 344px 1223px;
   grid-template-rows: 138px auto;
   grid-template-areas:
-    "title map"
-    "card map";
+    'title map'
+    'card map';
 }
 
 .map-title {
@@ -810,7 +807,7 @@ main {
   grid-area: card;
   align-self: start;
   height: 512px;
-  background-image: url("../../assets/icons/card-image.jpg");
+  background-image: url('../../assets/icons/card-image.jpg');
   background-color: #fcfcfc;
   background-position: top;
   background-repeat: no-repeat;
@@ -832,7 +829,7 @@ main {
 }
 
 .map-card-title {
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 36px;
@@ -856,7 +853,7 @@ main {
 
 .worldmap {
   position: relative;
-  background: url("../../assets/images/map.svg") no-repeat;
+  background: url('../../assets/images/map.svg') no-repeat;
   height: 700px;
   grid-area: map;
   align-self: stretch;
@@ -870,7 +867,7 @@ main {
   display: block;
   width: 50px;
   height: 50px;
-  background: url("../../assets/icons/panda-icon.svg") no-repeat center;
+  background: url('../../assets/icons/panda-icon.svg') no-repeat center;
   border: 2px solid #d9e8ff;
   box-sizing: border-box;
   border-radius: 50%;
@@ -881,15 +878,15 @@ main {
 }
 
 .worldmap__button:nth-of-type(2) a {
-  background: url("../../assets/icons/alligator-icon.svg") no-repeat center;
+  background: url('../../assets/icons/alligator-icon.svg') no-repeat center;
 }
 
 .worldmap__button:nth-of-type(3) a {
-  background: url("../../assets/icons/eagle-icon.svg") no-repeat center;
+  background: url('../../assets/icons/eagle-icon.svg') no-repeat center;
 }
 
 .worldmap__button:nth-of-type(4) a {
-  background: url("../../assets/icons/gorilla-icon.svg") no-repeat center;
+  background: url('../../assets/icons/gorilla-icon.svg') no-repeat center;
 }
 
 .map-pin {
@@ -962,8 +959,8 @@ main {
   grid-template-columns: 512px 512px 353px;
   grid-template-rows: 257px 127px;
   grid-template-areas:
-    "logo nav donate"
-    "logos nav social";
+    'logo nav donate'
+    'logos nav social';
 }
 
 .footer-logo {
@@ -1132,7 +1129,7 @@ main {
 }
 
 .application-form_title {
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   font-size: 36px;
   line-height: 145%;
 }
@@ -1630,9 +1627,9 @@ textarea {
   .testimonials-right-content {
     grid-template-columns: 454px;
     grid-template-areas:
-      "link"
-      "slider"
-      "buttons";
+      'link'
+      'slider'
+      'buttons';
     column-gap: 40px;
     row-gap: 25px;
   }
@@ -1674,8 +1671,8 @@ textarea {
     grid-template-columns: 292px 675px;
     grid-template-rows: 84px 448px;
     grid-template-areas:
-      "title map"
-      "card map";
+      'title map'
+      'card map';
   }
 
   .map-title {
@@ -1769,9 +1766,9 @@ textarea {
     grid-template-columns: 257px 401px 401px;
     grid-template-rows: 91px 166px 127px;
     grid-template-areas:
-      "logo nav donate"
-      "logos nav donate"
-      "logos nav social";
+      'logo nav donate'
+      'logos nav donate'
+      'logos nav social';
   }
 
   .footer-logo {
@@ -1870,8 +1867,8 @@ textarea {
   }
 
   .promo-description::after {
-    content: "";
-    background-image: url("../../assets/icons/dot.svg");
+    content: '';
+    background-image: url('../../assets/icons/dot.svg');
     position: absolute;
     background-size: 8px 9px;
     width: 8px;
@@ -2140,9 +2137,9 @@ textarea {
     overflow: hidden;
     grid-template-columns: 454px 454px;
     grid-template-areas:
-      "link link"
-      "slider slider"
-      "buttons buttons";
+      'link link'
+      'slider slider'
+      'buttons buttons';
     column-gap: 40px;
     row-gap: 30px;
   }
@@ -2176,7 +2173,7 @@ textarea {
     height: 390px;
     grid-area: none;
     align-self: center;
-    background-image: url("../../assets/icons/card-image.jpg");
+    background-image: url('../../assets/icons/card-image.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100% 40%;
@@ -2238,9 +2235,9 @@ textarea {
     grid-template-columns: 180px 390px;
     grid-template-rows: 74px 230px 79px;
     grid-template-areas:
-      "logo logos"
-      "nav  donate"
-      "nav  social";
+      'logo logos'
+      'nav  donate'
+      'nav  social';
   }
   .footer-logo {
     width: 95px;
@@ -2508,9 +2505,9 @@ textarea {
     width: 100%;
     overflow: hidden;
     grid-template-areas:
-      "link"
-      "slider"
-      "buttons";
+      'link'
+      'slider'
+      'buttons';
     column-gap: 20px;
     row-gap: 20px;
   }
@@ -2568,11 +2565,11 @@ textarea {
     justify-content: space-between;
   }
   .slide-left {
-    background: url("../../assets/icons/left_slide.svg");
+    background: url('../../assets/icons/left_slide.svg');
     border: none;
   }
   .slide-right {
-    background: url("../../assets/icons/left_slide.svg");
+    background: url('../../assets/icons/left_slide.svg');
     transform: rotate(180deg);
     border: none;
   }
@@ -2584,10 +2581,10 @@ textarea {
     grid-template-columns: 140px 140px;
     grid-template-rows: 145px 198px 241px 17px;
     grid-template-areas:
-      "logo nav"
-      "logos nav"
-      "donate donate"
-      "social social";
+      'logo nav'
+      'logos nav'
+      'donate donate'
+      'social social';
   }
   .footer-logo {
     width: 60px;
